@@ -1,31 +1,35 @@
-# Subscribe Button Animation
+# Subscribe Button Animation Creator
 
-A beautiful animation project for YouTube-style subscribe button interactions.
+Create professional YouTube subscribe button animations with custom branding and smooth transitions. Perfect for content creators looking to enhance their video production quality.
 
-## Features
+## ✨ Features
 
-- Smooth subscribe button animation
-- Channel avatar and name customization
-- Video export functionality
-- Responsive design
-- Two-panel layout interface
+- 🎨 Custom channel branding with avatar and name
+- 🎬 Smooth, professional animations
+- 💾 High-quality video export
+- 👀 Real-time preview
+- 📱 Responsive design
+- 🎯 Easy to use interface
 
-## Setup
+## 🚀 Quick Start
 
-1. Clone the repository:
-```bash
-git clone https://github.com/FanFan-web-developer/ytb-sub-animation.git
-```
+1. Visit [Subscribe Button Animation Creator](https://ytb-sub-animation.lyff.fun/)
+2. Enter your channel details
+3. Preview your animation
+4. Export and use in your videos
 
-2. Open `src/index.html` in your browser
+## 🛠️ Technical Details
 
-## Usage
+- Pure JavaScript implementation
+- Canvas-based animations
+- No dependencies required
+- Cross-browser compatible
+- Mobile-friendly interface
 
-1. Enter channel details in the left panel
-2. Preview the animation in the right panel
-3. Adjust export duration as needed
-4. Click "Export Video" to save the animation
-
-## License
+## 📝 License
 
 GNU GPLv3
+
+## 🌟 Show your support
+
+Give a ⭐️ if this project helped you!
