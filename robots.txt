@@ -1,1 +1,35 @@
- 
+# Allow all robots complete access
+User-agent: *
+Allow: /
+
+# Disallow development and system files/directories
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /.vscode/
+Disallow: /.idea/
+Disallow: /.env
+Disallow: /.gitignore
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Crawl-delay for all bots (in seconds)
+Crawl-delay: 10
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://ytb-sub-animation.lyff.fun/sitemap.xml
+
+# Host preference
+Host: https://ytb-sub-animation.lyff.fun 
