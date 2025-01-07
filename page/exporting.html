@@ -269,7 +269,7 @@
                     </div>
                     <div class="form-group">
                         <label for="channelName">Channel Name:</label>
-                        <input type="text" id="channelName" placeholder="Enter channel name">
+                        <input type="text" id="channelName" placeholder="Enter channel name" maxlength="12" pattern="[A-Za-z0-9\s]{1,12}" oninput="validateChannelName(this)">
                     </div>
                     <button onclick="updateChannel()">Update Channel</button>
                 </form>
@@ -674,6 +674,23 @@
             // Only channel name is being updated
             channelNameText = newChannelName;
             resetAnimation();
+        }
+    }
+
+    function validateChannelName(input) {
+        // Remove non-English characters and spaces
+        input.value = input.value.replace(/[^A-Za-z0-9\s]/g, '');
+        
+        // Trim to 12 characters if longer
+        if (input.value.length > 12) {
+            input.value = input.value.substring(0, 12);
+        }
+        
+        // Optional: Add visual feedback
+        if (input.value.length > 0 && input.value.length <= 12) {
+            input.style.borderColor = '#4CAF50';  // Green for valid
+        } else {
+            input.style.borderColor = '#e2e8f0';  // Default color
         }
     }
 </script>
